@@ -34,3 +34,6 @@ Grading will be on the basis of the following key points:
 
 ### Disclaimer
 - We will not be able to provide any monetary support to host the application. You can choose free hosting platforms too.
+
+### Contact
+For any assistance, please create a GitHub issue. We will resolve your query there.
