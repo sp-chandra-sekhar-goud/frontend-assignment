@@ -1,4 +1,4 @@
-# FrontEnd Assignment
+# Front-End Assignment
 
 The task is to create and deploy a simple Next.js - React app.
 
