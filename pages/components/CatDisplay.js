@@ -11,7 +11,7 @@ const CatDisplay = ({ cats, onLoadMore }) => {
     return (
         <>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-9'>
-            {cats.map(cat => (
+            {cats && cats.map(cat => (
                 <div key={cat.id} className='bg-gray-200 p-4 rounded-md w-[95vw] md:w-[30vw] lg:w-[20vw]'>
                     <img src={cat.url} className='h-[50vw] md:h-[20vw] w-[95vw] md:w-[20vw] rounded-md object-cover' alt="Random Cat" />
                     {cat.breeds.length > 0 && (
@@ -25,14 +25,14 @@ const CatDisplay = ({ cats, onLoadMore }) => {
             ))}
         </div>
         <div className='col-span-3 flex justify-center'>
-        <button
-            onClick={handleLoadMore}
-            className='bg-blue-500 text-white px-4 py-2 rounded-md mb-8'
-            disabled={isLoading}
-        >
-            {isLoading ? 'Loading...' : 'Load More'}
-        </button>
-    </div>
+            <button
+                onClick={handleLoadMore}
+                className='bg-blue-500 text-white px-4 py-2 rounded-md mb-8'
+                disabled={isLoading}
+            >
+                {isLoading ? 'Loading...' : 'Load More'}
+            </button>
+        </div>
     </>
     );
 };
