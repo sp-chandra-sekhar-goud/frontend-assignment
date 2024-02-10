@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CatModel from '../api/CatModel';
+import CatModel from '../models/CatModel';
 import CatDisplay from '../components/CatDisplay';
 
 const CatController = () => {
